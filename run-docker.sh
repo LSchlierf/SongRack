@@ -8,4 +8,5 @@ docker run -dit \
             -v ./setlist-back:/setlist-back \
             -v ./setlist-front:/setlist-front \
             -v /etc/letsencrypt:/etc/letsencrypt \
+            -v /acme:/acme \
             setlist
