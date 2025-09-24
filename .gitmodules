@@ -1,0 +1,6 @@
+[submodule "setlist-front"]
+	path = setlist-front
+	url = git@github.com:LSchlierf/setlist-front.git
+[submodule "setlist-back"]
+	path = setlist-back
+	url = git@github.com:LSchlierf/setlist-back.git
