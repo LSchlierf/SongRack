@@ -7,5 +7,5 @@ docker run -dit \
             -p 443:443 \
             -v ./setlist-back:/setlist-back \
             -v ./setlist-front:/setlist-front \
-            -v /etc/letsencrypt/live/setlist.lschlierf.de:/etc/letsencrypt/live/setlist.lschlierf.de \
+            -v /etc/letsencrypt:/etc/letsencrypt \
             setlist
