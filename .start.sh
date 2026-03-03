@@ -8,7 +8,7 @@ runfront() {
 runback() {
     cd /setlist-back
     npx -y zenstack generate --output zenstack
-    nodemon index.ts
+    nodemon --watch /setlist-back --watch /acme index.ts
 }
 
 npm --prefix /setlist-back i
