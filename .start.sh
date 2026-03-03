@@ -2,13 +2,13 @@
 
 runfront() {
     cd /setlist-front
-    npm run start
+    npm run dev
 }
 
 runback() {
     cd /setlist-back
-    sleep 5
-    nodemon app.js
+    npx -y zenstack generate --output zenstack
+    nodemon index.ts
 }
 
 npm --prefix /setlist-back i
