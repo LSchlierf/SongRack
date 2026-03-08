@@ -1,5 +1,22 @@
 # SongRack - Your New Setlist Hepler
 
+<style>
+@font-face {
+  font-family: poxast;
+  src: url("https://setlist.lschlierf.de/fonts/Poxast-Regular.ttf")
+}
+
+#title-splash {
+  font-size: 128px;
+  width: 100%;
+  text-align: center;
+  font-family: poxast;
+}
+</style>
+<div id="title-splash">
+SongRack
+</div>
+
 ## What is SongRack
 
 SongRack lets Bands easily create and manage a repertoire, build setlists via drag-and-drop, and export those to different PDFs.
