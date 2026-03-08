@@ -1,21 +1,6 @@
 # SongRack - Your New Setlist Hepler
 
-<style>
-@font-face {
-  font-family: poxast;
-  src: url("https://setlist.lschlierf.de/fonts/Poxast-Regular.ttf")
-}
-
-#title-splash {
-  font-size: 128px;
-  width: 100%;
-  text-align: center;
-  font-family: poxast;
-}
-</style>
-<div id="title-splash">
-SongRack
-</div>
+![SongRack Logo GIF](./SongRack.gif)
 
 ## What is SongRack
 
