@@ -18,8 +18,6 @@ Feel free to play around here, but don't save anything important, since the acco
 
 If you want to try out the real-time collaboration, you can have a friend log in with the same credentials or simply use another browser window.
 
-## Features
-
 ## Technical Details
 
 This Repo is split in two: [frontend](https://github.com/LSchlierf/setlist-front) and [backend](https://github.com/LSchlierf/setlist-back). Both are written in TypeScript.
