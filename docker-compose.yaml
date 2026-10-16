@@ -1,0 +1,29 @@
+name:
+  songrack
+
+services:
+  songrack:
+    build: .
+    container_name: songrack
+    volumes:
+      - ./setlist-back:/setlist-back
+      - ./setlist-front:/setlist-front
+    restart: unless-stopped
+  
+  http-proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+
+    environment:
+      TZ: "Europe/Berlin"
+
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
+    depends_on:
+      - songrack
