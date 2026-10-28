@@ -8,6 +8,13 @@ runfront() {
 runback() {
     cd /setlist-back
     npx -y zenstack generate --output zenstack
+    if [ "$INITDB" ]; then
+        echo "initializing db"
+        npx -y zenstack db push
+        npm run seed
+    else
+        echo "db already initialized"
+    fi
     nodemon --watch /setlist-back index.ts
 }
 

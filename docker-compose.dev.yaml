@@ -1,0 +1,24 @@
+name:
+  songrack-dev
+
+services:
+  songrack:
+    build: .
+    container_name: songrack-dev
+    volumes:
+      - ./setlist-back:/setlist-back
+      - ./setlist-front:/setlist-front
+    restart: unless-stopped
+    environment:
+      - DBURL=postgresql://postgres:postgres@postgres:5432
+      - INITDB='true'
+    depends_on:
+      - postgres
+    ports:
+      - 8080:8080
+
+  postgres:
+    image: postgres:latest
+    container_name: songrack-dev-db
+    environment:
+      - POSTGRES_PASSWORD=postgres
